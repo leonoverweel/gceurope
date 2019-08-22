@@ -28,6 +28,7 @@ h2.title {
     margin: 10vh 0 5vh 0;
     font-size: 2rem;
     text-align: center;
+    line-height: 1em;
 }
 
 h3 {
@@ -159,15 +160,16 @@ h3>span {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 1rem;
 }
 
 .who>.logo>img {
-    width: 10rem;
+    max-width: 8rem;
 }
 
 .who>.text {
     background-color: var(--color-turquoise);
-    padding: 5vh 1.5rem;
+    padding: 3vh 1.5rem;
     order: 0;
     flex: 3;
 }
