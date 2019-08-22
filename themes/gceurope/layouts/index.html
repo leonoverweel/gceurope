@@ -5,13 +5,23 @@
 </head>
 
 <body>
-    <h1>Hello, world!</h1>
-    <p>Organizations:</p>
+    <h1>Generation Climate Europe</h1>
+
+    <!-- Logos -->
+    {{ range (where .Site.RegularPages "Section" "organizations") }}
+    <img src="{{ .Params.logo }}" style="max-width: 100px;" />
+    {{ end }}
+
+    <!-- What we do -->
+    <h2>What we do</h2>
+
+    <!-- Who we are -->
+    <h2>Who we are</h2>
     <ul>
         {{ range (where .Site.RegularPages "Section" "organizations") }}
         <li>
+            <img src="{{ .Params.logo }}" style="max-width: 100px;" />
             <b>{{ .Params.title }}</b>
-            <img src="{{ .Params.logo }}" style="max-width: 100px;"/>
             {{ .Content }}
         </li>
         {{ end }}
