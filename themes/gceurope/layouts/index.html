@@ -10,8 +10,9 @@
     <ul>
         {{ range (where .Site.RegularPages "Section" "organizations") }}
         <li>
-            {{ .Params.title }}
+            <b>{{ .Params.title }}</b>
             <img src="{{ .Params.logo }}" style="max-width: 100px;"/>
+            {{ .Content }}
         </li>
         {{ end }}
     </ul>
