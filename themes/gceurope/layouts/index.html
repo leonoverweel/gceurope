@@ -32,9 +32,9 @@
     EU level.
 </p>
 
-<h2>Our demands</h2>
+<h2>Our demands for 2019 / 20</h2>
 <ul>
-    {{ range (where .Site.RegularPages "Section" "demands") }}
+    {{ range (where .Site.RegularPages.ByPublishDate "Section" "demands") }}
     <li>
         <b>{{ .Params.title }}</b>
         {{ .Content }}
