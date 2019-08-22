@@ -6,7 +6,7 @@
     </div>
 
     <div class="logos">
-        {{ range (where .Site.RegularPages "Section" "organizations") }}
+        {{ range (where .Site.RegularPages.ByTitle "Section" "organizations") }}
         <div>
             <img src="{{ .Params.logo }}" />
         </div>
@@ -63,7 +63,7 @@
 
 <h2 class="title" id="title-who"><b>Who</b> we are</h2>
 
-{{ range (where .Site.RegularPages "Section" "organizations") }}
+{{ range (where .Site.RegularPages.ByTitle "Section" "organizations") }}
 <div class="who">
     <div class="logo">
         <img src="{{ .Params.logo }}" />
