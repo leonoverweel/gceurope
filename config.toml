@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "https://gceurope.netlify.com"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "Generation Climate Europe"
 theme = "gceurope"
