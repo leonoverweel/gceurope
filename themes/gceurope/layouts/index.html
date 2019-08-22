@@ -1,11 +1,14 @@
 {{ define "main" }}
 
-<h1>Generation Climate Europe</h1>
+<div class="hero">
+    <div class="title"><h1>Generation Climate Europe</h1></div>
 
-<!-- Logos -->
-{{ range (where .Site.RegularPages "Section" "organizations") }}
-<img src="{{ .Params.logo }}" style="max-width: 100px;" />
-{{ end }}
+    <div class="logos">
+        {{ range (where .Site.RegularPages "Section" "organizations") }}
+        <img src="{{ .Params.logo }}" />
+        {{ end }}
+    </div>
+</div>
 
 <!-- What we do -->
 <h2>What we do</h2>
