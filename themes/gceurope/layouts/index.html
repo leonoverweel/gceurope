@@ -15,7 +15,7 @@
 </div>
 
 <!-- What we do -->
-<div class="wide">
+<div class="what">
     <div class="text" id="quote-text">
         <p>
             <i>I have been inspired by the passion, conviction and energy of the millions of our young people ... it is
@@ -35,7 +35,7 @@
     </div>
 </div>
 
-<div class="wide">
+<div class="what">
     <div class="text" id="pitch-text">
         <h2>What we do</h2>
         <p>
@@ -61,20 +61,18 @@
     {{ end }}
 </div>
 
-<h2 class="title">Who we are</h2>
+<h2 class="title" id="title-who"><b>Who</b> we are</h2>
 
-<div style="max-width: 40rem; background-color: white; margin: 5vh auto; padding: 1rem;">
-    <!-- Who we are -->
-    <ul>
-        {{ range (where .Site.RegularPages "Section" "organizations") }}
-        <li>
-            <img src="{{ .Params.logo }}" style="max-width: 100px;" />
-            <b>{{ .Params.title }}</b>
-            {{ .Content }}
-        </li>
-        {{ end }}
-    </ul>
-
+{{ range (where .Site.RegularPages "Section" "organizations") }}
+<div class="who">
+    <div class="logo">
+        <img src="{{ .Params.logo }}" />
+    </div>
+    <div class="text">
+        <h3><b>{{ .Title }}</b></h3>
+        {{ .Content }}
+    </div>
 </div>
+{{ end }}
 
 {{ end }}

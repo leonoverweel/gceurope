@@ -26,7 +26,7 @@ h2 {
 
 h2.title {
     margin: 10vh 0 5vh 0;
-    font-size: 1.8rem;
+    font-size: 2rem;
     text-align: center;
 }
 
@@ -84,44 +84,44 @@ h3>span {
     width: 100%;
 }
 
-.wide {
+.what {
     display: flex;
     justify-content: space-around;
     color: white;
 }
 
-.wide>div {
+.what>div {
     flex: 1;
 }
 
-.wide>.text {
+.what>.text {
     padding: 5vh 1rem;
 }
 
-.wide>#pitch-text {
+.what>#pitch-text {
     background-color: var(--color-blue);
 }
 
-.wide>#quote-text {
+.what>#quote-text {
     background-color: var(--color-turquoise);
 }
 
-.wide>#youth-text {
+.what>#youth-text {
     background-color: var(--color-green);
 }
 
-.wide>.image {
+.what>.image {
     width: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.wide>#pitch-image {
+.what>#pitch-image {
     background-image: url("https://source.unsplash.com/lbLgFFlADrY");
 }
 
-.wide>#quote-image {
+.what>#quote-image {
     background-image: url("https://source.unsplash.com/HR8IqMQNT8M");
 }
 
@@ -140,4 +140,39 @@ h3>span {
 .demands>p {
     margin-top: 0.5rem;
     margin-bottom: 1.5rem;
+}
+
+#title-who {
+    color: white;
+}
+
+.who {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+
+.who>.logo {
+    order: 1;
+    flex: 1;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.who>.logo>img {
+    width: 10rem;
+}
+
+.who>.text {
+    background-color: var(--color-turquoise);
+    padding: 5vh 1.5rem;
+    order: 0;
+    flex: 3;
+}
+
+.who:nth-child(even)>.text {
+    background-color: var(--color-green);
+    order: 2;
 }
