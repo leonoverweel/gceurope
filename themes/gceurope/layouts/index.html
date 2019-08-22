@@ -2,7 +2,7 @@
 
 <div class="hero">
     <div class="title">
-        <h1>Generation Climate Europe</h1>
+        <h1><b>Generation Climate</b> Europe</h1>
     </div>
 
     <div class="logos">
@@ -34,10 +34,10 @@
 
 <div class="wide">
     <div class="text" id="quote-text">
-        <p><i>
-            I have been inspired by the passion, conviction and energy of the millions of our young people ... it is our
-            generational duty to deliver for them.
-        </i></p>
+        <p>
+            <i>I have been inspired by the passion, conviction and energy of the millions of our young people ... it is
+                our generational duty to deliver for them.</i>
+        </p>
         <p>
             ~ U. von der Leyen
         </p>
@@ -52,29 +52,27 @@
     </div>
 </div>
 
+<h2 id="title-demands"><b>Our Demands</b> for 2019 / 20</h2>
+
+<div class="demands">
+    {{ range $index, $element := (where .Site.RegularPages.ByPublishDate "Section" "demands") }}
+    <h3>{{ (add $index 1) }} &ndash; <span><b>{{ .Params.title }}</b></span></h3>
+    {{ .Content }}
+    {{ end }}
+</div>
+
 <div style="max-width: 40rem; background-color: white; margin: 5vh auto; padding: 1rem;">
-
-<h2>Our demands for 2019 / 20</h2>
-<ul>
-    {{ range (where .Site.RegularPages.ByPublishDate "Section" "demands") }}
-    <li>
-        <b>{{ .Params.title }}</b>
-        {{ .Content }}
-    </li>
-    {{ end }}
-</ul>
-
-<!-- Who we are -->
-<h2>Who we are</h2>
-<ul>
-    {{ range (where .Site.RegularPages "Section" "organizations") }}
-    <li>
-        <img src="{{ .Params.logo }}" style="max-width: 100px;" />
-        <b>{{ .Params.title }}</b>
-        {{ .Content }}
-    </li>
-    {{ end }}
-</ul>
+    <!-- Who we are -->
+    <h2>Who we are</h2>
+    <ul>
+        {{ range (where .Site.RegularPages "Section" "organizations") }}
+        <li>
+            <img src="{{ .Params.logo }}" style="max-width: 100px;" />
+            <b>{{ .Params.title }}</b>
+            {{ .Content }}
+        </li>
+        {{ end }}
+    </ul>
 
 </div>
 

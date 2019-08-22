@@ -1,3 +1,9 @@
+:root {
+    --color-blue: #1f3f73;
+    --color-green: #075c48;
+    --color-turquoise: #12948e;
+}
+
 body {
     margin: 0;
     color: #333;
@@ -9,8 +15,21 @@ body {
     background-size: cover;
 }
 
-h1,h2 {
+h1, h2, h3 {
     font-family: 'Livvic', sans-serif;
+    font-weight: lighter;
+}
+
+h2 {
+    text-transform: uppercase;
+}
+
+h3 {
+    margin-bottom: 0;
+}
+
+h3>span {
+    color: var(--color-blue);
 }
 
 .hero {
@@ -74,15 +93,15 @@ h1,h2 {
 }
 
 .wide>#pitch-text {
-    background-color: #1f3f73;
+    background-color: var(--color-blue);
 }
 
 .wide>#quote-text {
-    background-color: #12948e;
+    background-color: var(--color-turquoise);
 }
 
 .wide>#youth-text {
-    background-color: #075c48;
+    background-color: var(--color-green);
 }
 
 .wide>.image {
@@ -98,4 +117,24 @@ h1,h2 {
 
 .wide>#quote-image {
     background-image: url("https://source.unsplash.com/HR8IqMQNT8M");
+}
+
+#title-demands {
+    margin: 10vh 0 5vh 0;
+    font-size: 1.8rem;
+    color: var(--color-blue);
+    text-align: center;
+}
+
+.demands {
+    background-color: #fafdff;
+    max-width: 35rem;
+    margin: 0 auto;
+    padding: 0.5rem 1.7rem 0.1rem 1.7rem;
+    box-shadow: 0.2rem 0.2rem 0.3rem rgba(55, 87, 140, 0.3);
+}
+
+.demands>p {
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
 }
