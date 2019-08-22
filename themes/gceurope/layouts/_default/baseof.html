@@ -1,11 +1,16 @@
 <!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <html>
-    {{- partial "head.html" . -}}
-    <body>
-        {{- partial "header.html" . -}}
-        <div id="content">
+{{- partial "head.html" . -}}
+
+<body>
+    {{ if not .IsHome }}
+    {{- partial "header.html" . -}}
+    {{ end }}
+    <div id="content">
         {{- block "main" . }}{{- end }}
-        </div>
-        {{- partial "footer.html" . -}}
-    </body>
+    </div>
+    {{- partial "footer.html" . -}}
+</body>
+
 </html>
