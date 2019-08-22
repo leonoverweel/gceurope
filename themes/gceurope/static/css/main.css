@@ -30,7 +30,7 @@ body {
     margin: 0;
     padding: 0;
     font-size: 3rem;
-    text-shadow: 1px 1px 0.15rem #37578c;
+    text-shadow: 0.1rem 0.1rem 0.1rem rgba(55, 87, 140, 0.3);
 }
 
 .hero>.logos {
@@ -40,15 +40,16 @@ body {
 }
 
 .hero>.logos>div {
-    max-width: 8rem;
+    max-width: 6rem;
     margin-bottom: 10vh;
     background-color: white;
     padding: 1rem;
-    border-radius: 5rem;
+    border-radius: 4rem;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 0.1rem 0.1rem 0.1rem rgba(55, 87, 140, 0.3);
 }
 
 .hero>.logos>div>img {
