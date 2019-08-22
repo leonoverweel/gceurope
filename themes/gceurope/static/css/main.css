@@ -9,6 +9,10 @@ body {
     background-size: cover;
 }
 
+h1,h2 {
+    font-family: 'Livvic', sans-serif;
+}
+
 .hero {
     max-width: 50rem;
     margin: 0 auto;
@@ -21,7 +25,6 @@ body {
     display: inline-block;
     color: white;
     padding: 0.6rem 1rem;
-    font-family: 'Livvic', sans-serif;
 }
 
 .hero>.title>h1 {
@@ -54,4 +57,28 @@ body {
 
 .hero>.logos>div>img {
     width: 100%;
+}
+
+.pitch {
+    margin: 0 auto;
+    background-color: #1f3f73;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.pitch>#pitch-text {
+    margin: 0;
+    padding: 0 1rem;
+    flex: 1;
+}
+
+.pitch>#pitch-image {
+    flex: 1;
+    width: 100%;
+    background-image: url("https://source.unsplash.com/lbLgFFlADrY");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
