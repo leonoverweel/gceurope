@@ -59,26 +59,43 @@ h1,h2 {
     width: 100%;
 }
 
-.pitch {
-    margin: 0 auto;
-    background-color: #1f3f73;
-    color: white;
+.wide {
     display: flex;
     justify-content: space-around;
-
+    color: white;
 }
 
-.pitch>#pitch-text {
-    margin: 0;
-    padding: 0 1rem;
+.wide>div {
     flex: 1;
 }
 
-.pitch>#pitch-image {
-    flex: 1;
+.wide>.text {
+    padding: 5vh 1rem;
+}
+
+.wide>#pitch-text {
+    background-color: #1f3f73;
+}
+
+.wide>#quote-text {
+    background-color: #12948e;
+}
+
+.wide>#youth-text {
+    background-color: #075c48;
+}
+
+.wide>.image {
     width: 100%;
-    background-image: url("https://source.unsplash.com/lbLgFFlADrY");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.wide>#pitch-image {
+    background-image: url("https://source.unsplash.com/lbLgFFlADrY");
+}
+
+.wide>#quote-image {
+    background-image: url("https://source.unsplash.com/HR8IqMQNT8M");
 }
