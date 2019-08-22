@@ -19,8 +19,9 @@ body {
 .hero>.title {
     margin: 20vh auto 10vh auto;
     display: inline-block;
-    background-color: white;
+    color: white;
     padding: 0.6rem 1rem;
+    font-family: 'Livvic', sans-serif;
 }
 
 .hero>.title>h1 {
@@ -28,7 +29,8 @@ body {
     text-align: center;
     margin: 0;
     padding: 0;
-    font-size: 2.5rem;
+    font-size: 3rem;
+    text-shadow: 1px 1px 0.15rem #37578c;
 }
 
 .hero>.logos {
