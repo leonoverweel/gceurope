@@ -11,7 +11,7 @@
         {{ range (where .Site.RegularPages "Section" "organizations") }}
         <li>
             {{ .Params.title }}
-            <img src="{{ .Params.logo }}" />
+            <img src="{{ .Params.logo }}" style="max-width: 100px;"/>
         </li>
         {{ end }}
     </ul>
