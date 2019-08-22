@@ -13,10 +13,11 @@ body {
     max-width: 50rem;
     margin: 0 auto;
     text-align: center;
+    padding: 0 1rem;
 }
 
 .hero>.title {
-    margin: 20vh auto;
+    margin: 20vh auto 10vh auto;
     display: inline-block;
     background-color: white;
     padding: 0.6rem 1rem;
@@ -32,8 +33,22 @@ body {
 
 .hero>.logos {
     clear: both;
+    display: flex;
+    justify-content: space-evenly;
 }
 
-.hero>.logos>img {
+.hero>.logos>div {
     max-width: 8rem;
+    margin-bottom: 10vh;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 5rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero>.logos>div>img {
+    width: 100%;
 }

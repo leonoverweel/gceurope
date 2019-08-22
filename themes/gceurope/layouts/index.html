@@ -5,7 +5,9 @@
 
     <div class="logos">
         {{ range (where .Site.RegularPages "Section" "organizations") }}
-        <img src="{{ .Params.logo }}" />
+        <div>
+            <img src="{{ .Params.logo }}" />
+        </div>
         {{ end }}
     </div>
 </div>
