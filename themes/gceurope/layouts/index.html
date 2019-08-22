@@ -52,6 +52,8 @@
     </div>
 </div>
 
+<div style="max-width: 40rem; background-color: white; margin: 5vh auto; padding: 1rem;">
+
 <h2>Our demands for 2019 / 20</h2>
 <ul>
     {{ range (where .Site.RegularPages.ByPublishDate "Section" "demands") }}
@@ -73,5 +75,7 @@
     </li>
     {{ end }}
 </ul>
+
+</div>
 
 {{ end }}
