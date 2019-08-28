@@ -81,7 +81,7 @@ h3>span {
     box-shadow: 0.1rem 0.1rem 0.1rem rgba(55, 87, 140, 0.3);
 }
 
-.hero>.logos>div>img {
+.hero>.logos>div>a>img {
     width: 100%;
 }
 
@@ -177,6 +177,16 @@ h3>span {
 .who:nth-child(even)>.text {
     background-color: var(--color-green);
     order: 2;
+}
+
+.who>.text>p>a {
+    color: white;
+}
+
+.who>.text>h3>a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
 }
 
 @media screen and (max-width: 30rem) {

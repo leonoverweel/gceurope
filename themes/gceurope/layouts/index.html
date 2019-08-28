@@ -8,7 +8,9 @@
     <div class="logos">
         {{ range (where .Site.RegularPages.ByTitle "Section" "organizations") }}
         <div>
-            <img src="{{ .Params.logo }}" />
+            <a href="{{ .Params.link }}" target="_blank">
+                <img src="{{ .Params.logo }}" />
+            </a>
         </div>
         {{ end }}
     </div>
@@ -69,7 +71,7 @@
         <img src="{{ .Params.logo }}" />
     </div>
     <div class="text">
-        <h3><b>{{ .Title }}</b></h3>
+        <h3><a href="{{ .Params.link }}">{{ .Title }}</a></h3>
         {{ .Content }}
     </div>
 </div>
