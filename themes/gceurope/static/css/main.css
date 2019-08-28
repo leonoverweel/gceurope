@@ -178,3 +178,49 @@ h3>span {
     background-color: var(--color-green);
     order: 2;
 }
+
+@media screen and (max-width: 30rem) {
+    body {
+        background: #999;
+    }
+
+    .logos>div {
+        margin: 0.5rem;
+    }
+
+    .what {
+        display: block
+    }
+
+    .what>.image {
+        height: 25vh
+    }
+
+    .what>.text {
+        padding: 0.5rem 1rem;
+    }
+
+    #title-demands {
+        padding: 1rem;
+    }
+
+    .demands {
+        box-shadow: none;
+    }
+
+    .who {
+        display: block;
+    }
+
+    .who>.logo {
+        height: 15vh;
+    }
+
+    .who>.logo>img {
+        max-width: 6rem;
+    }
+
+    .who>.text {
+        padding: 0.5rem 1rem;
+    }
+}
