@@ -180,10 +180,6 @@ h3>span {
 }
 
 @media screen and (max-width: 30rem) {
-    body {
-        background: #999;
-    }
-
     .logos>div {
         margin: 0.5rem;
     }
