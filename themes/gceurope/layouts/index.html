@@ -54,7 +54,7 @@
     </div>
 </div>
 
-<h2 class="title" id="title-demands"><b>Our Demands</b> for 2019 / 20</h2>
+<h2 class="title"><b>Our Demands</b> for 2019 / 20</h2>
 
 <div class="demands">
     {{ range $index, $element := (where .Site.RegularPages.ByPublishDate "Section" "demands") }}
@@ -63,7 +63,7 @@
     {{ end }}
 </div>
 
-<h2 class="title" id="title-who"><b>Who we are</b></h2>
+<h2 class="title"><b>Who we are</b></h2>
 
 {{ range (where .Site.RegularPages.ByTitle "Section" "organizations") }}
 <div class="who">

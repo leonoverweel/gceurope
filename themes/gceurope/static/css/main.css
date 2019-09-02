@@ -24,15 +24,14 @@ h1, h2, h3 {
     font-weight: lighter;
 }
 
-h2 {
-    text-transform: uppercase;
-}
-
 h2.title {
     margin: 10vh 0 5vh 0;
     font-size: 2rem;
     text-align: center;
     line-height: 1em;
+    text-transform: uppercase;
+    color: var(--color-blue);
+    text-shadow: var(--shadow-white);
 }
 
 h3 {
@@ -130,11 +129,6 @@ h3>span {
     background-image: url("https://source.unsplash.com/HR8IqMQNT8M");
 }
 
-#title-demands {
-    color: var(--color-blue);
-    text-shadow: var(--shadow-white);
-}
-
 .demands {
     background-color: #fafdff;
     max-width: 35rem;
@@ -146,11 +140,6 @@ h3>span {
 .demands>p {
     margin-top: 0.5rem;
     margin-bottom: 1.5rem;
-}
-
-#title-who {
-    color: white;
-    text-shadow: var(--shadow-blue);
 }
 
 .who {
