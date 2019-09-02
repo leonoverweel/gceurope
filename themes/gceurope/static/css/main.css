@@ -2,6 +2,8 @@
     --color-blue: #1f3f73;
     --color-green: #075c48;
     --color-turquoise: #12948e;
+    --color-white: #fafdff;
+
 
     --shadow-blue: 0.1rem 0.1rem 0.5rem rgba(55, 87, 140, 0.7);
     --shadow-white: 0.1rem 0.1rem 0.5rem rgba(255, 255, 255, 1)
@@ -40,6 +42,11 @@ h3 {
 
 h3>span {
     color: var(--color-blue);
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
 }
 
 .hero {
@@ -129,12 +136,16 @@ h3>span {
     background-image: url("https://source.unsplash.com/HR8IqMQNT8M");
 }
 
-.demands {
-    background-color: #fafdff;
+.white-box {
+    background-color: var(--color-white);
     max-width: 35rem;
     margin: 0 auto;
-    padding: 0.5rem 1.7rem 0.1rem 1.7rem;
     box-shadow: 0.2rem 0.2rem 0.3rem rgba(55, 87, 140, 0.3);
+    border-radius: 0.3rem;
+}
+
+.demands {
+    padding: 0.5rem 1.7rem 0.1rem 1.7rem;
 }
 
 .demands>p {
@@ -182,6 +193,41 @@ h3>span {
     text-decoration: none;
     font-weight: bold;
     color: white;
+}
+
+.contact {
+    padding: 0.05rem 1rem 1rem 1rem;
+}
+
+.contact>p>a {
+    color: var(--color-blue);
+}
+
+.contact>form>div {
+    display: flex;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+.contact>form>div>input, .contact>form>div>textarea {
+    border: none;
+    background-color: #e8f1fc;
+    border-bottom: 1px solid var(--color-blue);
+    font-size: 1rem;
+    padding: 0.3rem;
+    border-radius: 0.3rem;
+}
+
+.contact>form>div>input {
+    flex-grow: 1;
+    margin-left: 0.5rem;
+}
+
+.contact>form>div>textarea {
+    width: 100%;
+    margin-top: 0.1rem;
+    margin-bottom: 0.5rem;
+    font: inherit;
 }
 
 @media screen and (max-width: 30rem) {

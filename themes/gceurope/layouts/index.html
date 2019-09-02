@@ -56,7 +56,7 @@
 
 <h2 class="title"><b>Our Demands</b> for 2019 / 20</h2>
 
-<div class="demands">
+<div class="white-box demands">
     {{ range $index, $element := (where .Site.RegularPages.ByPublishDate "Section" "demands") }}
     <h3>{{ (add $index 1) }} &ndash; <span><b>{{ .Params.title }}</b></span></h3>
     {{ .Content }}
@@ -76,5 +76,33 @@
     </div>
 </div>
 {{ end }}
+
+<h2 class="title"><b>Contact Us</b></h2>
+
+<div class="white-box contact">
+    <p>
+        You can contact us by filling in this form or by emailing
+        <a href="mailto:gce@gceurope.org">gce@gceurope.org</a>.
+    </p>
+    <form name="contact" netlify>
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" />
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" />
+        </div>
+        <div>
+            <label for="message">Message:</label>
+        </div>
+        <div style="margin-top: 0;">
+            <textarea name="message" id="message" rows="3"></textarea>
+        </div>
+        <button type="submit" name="submit" value="submit">Send</button>
+    </form>
+</div>
+
+<div style="height: 20vh"></div>
 
 {{ end }}
