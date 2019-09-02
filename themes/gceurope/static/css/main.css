@@ -2,6 +2,9 @@
     --color-blue: #1f3f73;
     --color-green: #075c48;
     --color-turquoise: #12948e;
+
+    --shadow-blue: 0.1rem 0.1rem 0.5rem rgba(55, 87, 140, 0.7);
+    --shadow-white: 0.1rem 0.1rem 0.5rem rgba(255, 255, 255, 1)
 }
 
 body {
@@ -13,6 +16,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 h1, h2, h3 {
@@ -59,7 +63,7 @@ h3>span {
     margin: 0;
     padding: 0;
     font-size: 3rem;
-    text-shadow: 0.1rem 0.1rem 0.1rem rgba(55, 87, 140, 0.3);
+    text-shadow: var(--shadow-blue);
 }
 
 .hero>.logos {
@@ -128,6 +132,7 @@ h3>span {
 
 #title-demands {
     color: var(--color-blue);
+    text-shadow: var(--shadow-white);
 }
 
 .demands {
@@ -145,6 +150,7 @@ h3>span {
 
 #title-who {
     color: white;
+    text-shadow: var(--shadow-blue);
 }
 
 .who {
@@ -169,7 +175,7 @@ h3>span {
 
 .who>.text {
     background-color: var(--color-turquoise);
-    padding: 3vh 1.5rem;
+    padding: 2vh 1.5rem;
     order: 0;
     flex: 3;
 }
