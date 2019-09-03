@@ -3,6 +3,7 @@
     --color-green: #075c48;
     --color-turquoise: #12948e;
     --color-white: #fafdff;
+    --color-light-blue: #e8f1fc;
 
 
     --shadow-blue: 0.1rem 0.1rem 0.5rem rgba(55, 87, 140, 0.7);
@@ -211,7 +212,7 @@ a {
 
 .contact>form>div>input, .contact>form>div>textarea {
     border: none;
-    background-color: #e8f1fc;
+    background-color: var(--color-light-blue);
     border-bottom: 1px solid var(--color-blue);
     font-size: 1rem;
     padding: 0.3rem;
@@ -228,6 +229,18 @@ a {
     margin-top: 0.1rem;
     margin-bottom: 0.5rem;
     font: inherit;
+}
+
+.contact>form>button {
+    width: 8rem;
+    background-color: var(--color-light-blue);
+    border: none;
+    border-bottom: 1px solid var(--color-blue);
+    border-radius: 0.3rem;
+    padding: 0.2rem 0 0.1rem 0;
+    font: inherit;
+    margin: 0.5rem auto 0 auto;
+    display: block;
 }
 
 @media screen and (max-width: 30rem) {
