@@ -124,6 +124,7 @@ a {
 }
 
 .what>#quote-text {
+    font-family: 'Lora', serif;
     background-color: var(--color-gce-beige);
     color: var(--color-gce-blue-dark);
 }
