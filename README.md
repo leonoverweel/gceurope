@@ -1,5 +1,7 @@
 # Generation Climate Europe
 
+![GCE Logo](static/images/gceurope-opengraph.png)
+
 This is the repository for the [Generation Climate Europe website](https://gceurope.org).
 The site runs on [Hugo](https://gohugo.io/), a static site generator that takes content written in Markdown (the demands and organizations attached to GCE) and builds them into the HTML landing page.
 It's hosted on [Netlify](https://www.netlify.com).
