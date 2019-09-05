@@ -5,9 +5,8 @@
     --color-white: #fafdff;
     --color-light-blue: #e8f1fc;
 
-
-    --shadow-blue: 0.1rem 0.1rem 0.5rem rgba(55, 87, 140, 0.7);
-    --shadow-white: 0.1rem 0.1rem 0.5rem rgba(255, 255, 255, 1)
+    --shadow-blue: 0.1rem 0.1rem 0.5rem rgb(55, 87, 140);
+    --shadow-white: 0.1rem 0.1rem 0.5rem rgb(255, 255, 255);
 }
 
 body {
@@ -54,22 +53,18 @@ a {
     max-width: 50rem;
     margin: 0 auto;
     text-align: center;
-    padding: 0 1rem;
+    padding: 15vh 1rem;
 }
 
-.hero>.title {
-    margin: 20vh auto 10vh auto;
-    display: inline-block;
-    color: white;
-    padding: 0.6rem 1rem;
+.hero>img {
+    width: 15rem;
 }
 
-.hero>.title>h1 {
-    line-height: 1em;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    font-size: 3rem;
+.hero>.slogan>h2 {
+    margin: 3rem 0;
+    text-transform: capitalize;
+    font-weight: bold;
+    color: var(--color-white);
     text-shadow: var(--shadow-blue);
 }
 
@@ -81,7 +76,6 @@ a {
 
 .hero>.logos>div {
     max-width: 6rem;
-    margin-bottom: 20vh;
     background-color: white;
     padding: 1rem;
     border-radius: 4rem;
