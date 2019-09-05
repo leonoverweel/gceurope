@@ -72,18 +72,29 @@ a {
     clear: both;
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .hero>.logos>div {
-    max-width: 6rem;
-    background-color: white;
+    flex: 1 0 21%;
+    max-width: 5rem;
+    height: auto;
+    margin: 1rem;
     padding: 1rem;
     border-radius: 4rem;
     overflow: hidden;
+
+    background-color: white;
+    box-shadow: 0.1rem 0.1rem 0.1rem rgba(55, 87, 140, 0.3);
+
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0.1rem 0.1rem 0.1rem rgba(55, 87, 140, 0.3);
+}
+
+.hero>.logos>div:before {
+	content: '';
+	padding-top: 100%;
 }
 
 .hero>.logos>div>a>img {
@@ -238,6 +249,10 @@ a {
 }
 
 @media screen and (max-width: 30rem) {
+    .hero>img {
+        width: 12rem;
+    }
+
     .logos>div {
         margin: 0.5rem;
     }
