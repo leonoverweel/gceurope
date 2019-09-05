@@ -1,11 +1,14 @@
 :root {
     --color-white: #fafdff;
     --color-blue-faded: #e8f1fc;
+    --color-blue-background-top: #9dcced;
+    --color-blue-background-bottom: #e8f1fc;
 
     --color-gce-beige: rgb(243, 235, 223);
     --color-gce-blue-light: rgb(48, 155, 191);
     --color-gce-blue-dark: rgb(15, 55, 98);
-    --color-gce-gold: rgb(248, 196, 123);
+    --color-gce-gold-light: rgb(248, 196, 123);
+    --color-gce-gold-dark: rgb(222, 171, 100);
     --color-gce-green-light: rgb(113, 138, 79);
     --color-gce-green-dark: rgb(47, 81, 52);
 
@@ -18,7 +21,7 @@ body {
     color: #333;
     font-family: 'Open Sans', sans-serif;
     line-height: 1.5em;
-    background-image: url("https://source.unsplash.com/lpjb_UMOyx8");
+    background-image: linear-gradient(to bottom right, var(--color-blue-background-top), var(--color-blue-background-bottom));
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -51,6 +54,7 @@ h3>span {
 a {
     text-decoration: none;
     font-weight: bold;
+    color: var(--color-gce-gold-light);
 }
 
 .hero {
@@ -65,11 +69,12 @@ a {
 }
 
 .hero>.slogan>h2 {
-    margin: 3rem 0;
+    margin: 3rem 0 2.5rem 0;
     text-transform: capitalize;
     font-weight: bold;
-    color: var(--color-white);
-    text-shadow: var(--shadow-blue);
+    line-height: 1.4em;
+    color: var(--color-gce-blue-dark);
+    text-shadow: var(--shadow-white);
 }
 
 .hero>.logos {
@@ -89,7 +94,7 @@ a {
     overflow: hidden;
 
     background-color: white;
-    border: 4px solid var(--color-gce-gold);
+    border: 4px solid var(--color-gce-gold-light);
 
     display: flex;
     justify-content: center;
@@ -197,10 +202,6 @@ a {
     order: 2;
 }
 
-.who>.text>p>a {
-    color: white;
-}
-
 .who>.text>h3>a {
     text-decoration: none;
     font-weight: bold;
@@ -212,7 +213,7 @@ a {
 }
 
 .contact>p>a {
-    color: var(--color-gce-blue-dark);
+    color: var(--color-gce-gold-dark);
 }
 
 .contact>form>div {
@@ -255,6 +256,10 @@ a {
 }
 
 @media screen and (max-width: 30rem) {
+    body {
+        background-image: linear-gradient(to bottom, var(--color-blue-background-top), var(--color-blue-background-bottom));
+    }
+
     .hero>img {
         width: 12rem;
     }
