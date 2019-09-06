@@ -4,9 +4,7 @@
 {{- partial "head.html" . -}}
 
 <body>
-    {{ if not .IsHome }}
-    {{- partial "header.html" . -}}
-    {{ end }}
+    
     <div id="content">
         {{- block "main" . }}{{- end }}
     </div>
