@@ -1,5 +1,14 @@
 {{ define "main" }}
 
+<div class="topnav">
+    <div>
+        <div><a href="#gce">Generation Climate Europe</a></div>
+        <div><a href="#demands">Demands</a></div>
+        <div><a href="#members">Members</a></div>
+        <div><a href="#contact">Contact</a></div>
+    </div> 
+</div>
+
 <div class="hero">
     <img src="images/gceurope-logo.png" />
 
@@ -19,7 +28,7 @@
 </div>
 
 <!-- What we do -->
-<div class="what">
+<div class="what" id="gce">
     <div class="text" id="youth-text">
         <p>
             The youngest generation will be the ones most affected by today’s political inaction. Our generation will
@@ -57,7 +66,7 @@
     </div>
 </div>
 
-<h2 class="title"><b>Our Demands</b> for 2019 / 20</h2>
+<h2 class="title" id="demands"><b>Our Demands</b> for 2019 / 20</h2>
 
 <div class="white-box demands">
     {{ range $index, $element := (where .Site.RegularPages.ByPublishDate "Section" "demands") }}
@@ -66,7 +75,7 @@
     {{ end }}
 </div>
 
-<h2 class="title"><b>Who we are</b></h2>
+<h2 class="title" id="members"><b>Who we are</b></h2>
 
 {{ range (where .Site.RegularPages.ByTitle "Section" "organizations") }}
 <div class="who">
@@ -80,7 +89,7 @@
 </div>
 {{ end }}
 
-<h2 class="title"><b>Contact Us</b></h2>
+<h2 class="title" id="contact"><b>Contact Us</b></h2>
 
 <div class="white-box contact">
     <p>
