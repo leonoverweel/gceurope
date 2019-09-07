@@ -10,7 +10,6 @@
     --color-gce-gold-dark: rgb(222, 171, 100);
     --color-gce-green-light: rgb(113, 138, 79);
     --color-gce-green-dark: rgb(47, 81, 52);
-    --shadow-blue: 0.1rem 0.1rem 0.5rem rgb(55, 87, 140);
     --shadow-white: 0.1rem 0.1rem 1rem rgb(255, 255, 255);
 }
 
@@ -103,7 +102,6 @@ a {
     font-weight: bold;
     color: var(--color-gce-gold-dark);
     text-shadow: var(--shadow-white);
-    text-transform: uppercase;
     line-height: 3rem;
 }
 
