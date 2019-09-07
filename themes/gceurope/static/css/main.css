@@ -119,6 +119,10 @@ a {
     line-height: 3rem;
 }
 
+.hero>img{
+    display: none;
+}
+
 .hero>.slogan>h2 {
     margin: 4rem 0 2.5rem 0;
     text-transform: capitalize;
@@ -318,7 +322,11 @@ a {
     .topnav {
         display: none;
     }
+    .hero>h1 {
+        display: none;
+    }
     .hero>img {
+        display: inline-block;
         width: 12rem;
     }
     .hero>.logos>div {
