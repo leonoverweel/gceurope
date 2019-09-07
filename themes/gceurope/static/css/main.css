@@ -58,6 +58,20 @@ a {
     color: var(--color-gce-gold-light);
 }
 
+#scroll-to-top {
+    position: fixed;
+    bottom: 1rem;
+    left: 1rem;
+    z-index: 100;
+    background: var(--color-gce-blue-dark);
+    color: var(--color-white);
+    padding: 0.3rem 0.6rem 0 0.6rem;
+    opacity: 0.6;
+    font-weight: bold;
+    border-radius: 0.3rem;
+    color: white;
+}
+
 .topnav {
     width: 100%;
     display: flex;
@@ -297,6 +311,9 @@ a {
 @media screen and (max-width: 30rem) {
     body {
         background-image: linear-gradient(to bottom, var(--color-blue-background-top), var(--color-blue-background-bottom));
+    }
+    #scroll-to-top {
+        display: none;
     }
     .topnav {
         display: none;
