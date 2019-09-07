@@ -11,7 +11,7 @@
     --color-gce-green-light: rgb(113, 138, 79);
     --color-gce-green-dark: rgb(47, 81, 52);
     --shadow-blue: 0.1rem 0.1rem 0.5rem rgb(55, 87, 140);
-    --shadow-white: 0.1rem 0.1rem 0.5rem rgb(255, 255, 255);
+    --shadow-white: 0.1rem 0.1rem 1rem rgb(255, 255, 255);
 }
 
 html {
@@ -61,29 +61,34 @@ a {
 
 .topnav {
     width: 100%;
-    background-color: rgba(55, 87, 140, 0.3);
+    display: flex;
+    align-items: flex-start;
+    height: 4rem;
+}
+
+.topnav>div:first-child {
+    flex-grow: 1;
+}
+
+.topnav>div>img {
+    height: 6rem;
 }
 
 .topnav>div {
-    max-width: 50rem;
-    margin: 0 auto;
-    display: flex;
-}
-
-.topnav>div>div {
     padding: 1rem;
 }
 
-.topnav>div>div>a {
+.topnav>div>a {
     color: var(--color-gce-blue-dark);
 }
 
-.topnav>div>div>a:hover {
+.topnav>div>a:hover {
     border-bottom: 2px solid var(--color-gce-blue-dark);
 }
 
 .topnav>div>div:first-child {
     flex-grow: 1;
+    padding: 0;
 }
 
 .hero {
@@ -93,12 +98,17 @@ a {
     padding: 15vh 1rem;
 }
 
-.hero>img {
-    width: 15rem;
+.hero>h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--color-gce-gold-dark);
+    text-shadow: var(--shadow-white);
+    text-transform: uppercase;
+    line-height: 3rem;
 }
 
 .hero>.slogan>h2 {
-    margin: 3rem 0 2.5rem 0;
+    margin: 4rem 0 2.5rem 0;
     text-transform: capitalize;
     font-weight: bold;
     line-height: 1.4em;
