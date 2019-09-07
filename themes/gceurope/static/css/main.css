@@ -140,6 +140,7 @@ a {
 .what {
     display: flex;
     justify-content: space-around;
+    align-content: center;
     color: white;
 }
 
@@ -148,6 +149,9 @@ a {
 }
 
 .what>.text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     padding: 5vh 1rem;
 }
 
