@@ -112,7 +112,7 @@ a {
 }
 
 .hero>h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: bold;
     color: var(--color-gce-gold-dark);
     text-shadow: var(--shadow-white);
@@ -309,6 +309,12 @@ a {
     font: inherit;
     margin: 0.5rem auto 0 auto;
     display: block;
+}
+
+@media screen and (max-width: 50rem) {
+    .hero>h1 {
+        font-size: 2.8rem;
+    }
 }
 
 @media screen and (max-width: 30rem) {
