@@ -125,7 +125,6 @@ a {
 
 .hero>.slogan>h2 {
     margin: 4rem 0 2.5rem 0;
-    text-transform: capitalize;
     font-weight: bold;
     line-height: 1.4em;
     color: var(--color-gce-blue-dark);
