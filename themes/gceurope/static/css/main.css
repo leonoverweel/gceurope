@@ -353,6 +353,9 @@ a {
     .demands {
         box-shadow: none;
     }
+    .white-box {
+        margin: 0 1rem;
+    }
     .who {
         display: block;
     }
