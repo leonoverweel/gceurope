@@ -1,13 +1,15 @@
 {{ define "main" }}
 
-<a href="#home"><div id="scroll-to-top">&#94;</div></a>
+<a href="#home">
+    <div id="scroll-to-top">&#94;</div>
+</a>
 
 <div id="home" class="topnav">
     <div><img src="images/gceurope-logo.png" /></div>
     <div><a href="#gce">About</a></div>
-    <div><a href="#demands">Demands</a></div>
+    <div><a href="#priorities">Priorities</a></div>
     <div><a href="#members">Members</a></div>
-    <div><a href="#contact">Contact</a></div>
+    <div><a href="#join">Join</a></div>
 </div>
 
 <div class="hero">
@@ -66,7 +68,7 @@
     </div>
 </div>
 
-<h2 class="title" id="demands"><b>Our Demands</b> for 2019 / 20</h2>
+<h2 class="title" id="priorities"><b>Our Priorities</b> for 2019 / 20</h2>
 
 <div class="white-box demands">
     {{ range $index, $element := (where .Site.RegularPages.ByPublishDate "Section" "demands") }}
@@ -89,12 +91,12 @@
 </div>
 {{ end }}
 
-<h2 class="title" id="contact"><b>Contact Us</b></h2>
+<h2 class="title" id="join"><b>Join Us</b></h2>
 
 <div class="white-box contact">
     <p>
-        You can contact us by filling in this form or by emailing
-        <a href="mailto:gce@gceurope.org">gce@gceurope.org</a>.
+        If your organisation is interested in joining GCE please fill in the form, or get in touch via <a
+            href="mailto:gce@gceurope.org">gce@gceurope.org</a>.
     </p>
     <form name="contact" netlify>
         <div>
