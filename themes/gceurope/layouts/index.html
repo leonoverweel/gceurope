@@ -72,7 +72,7 @@
 
 <div class="white-box demands">
     {{ range $index, $element := (where .Site.RegularPages.ByPublishDate "Section" "demands") }}
-    <h3>{{ (add $index 1) }} &ndash; <span><b>{{ .Params.title }}</b></span></h3>
+    <h3><span><b>{{ .Params.title }}</b></span></h3>
     {{ .Content }}
     {{ end }}
 </div>
