@@ -119,7 +119,7 @@ a {
     line-height: 3rem;
 }
 
-.hero>img{
+.hero>img {
     display: none;
 }
 
@@ -202,11 +202,11 @@ a {
 }
 
 .what>#pitch-image {
-    background-image: url("https://source.unsplash.com/lbLgFFlADrY");
+    background-image: url("/images/hands.jpeg");
 }
 
 .what>#quote-image {
-    background-image: url("https://source.unsplash.com/HR8IqMQNT8M");
+    background-image: url("/images/march.jpeg");
 }
 
 .white-box {
