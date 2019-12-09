@@ -136,6 +136,9 @@ a {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    /* adjust for number of members */
+    max-width: 500px;
+    margin: auto;
 }
 
 .hero>.logos>div {
